@@ -13,12 +13,15 @@ import numpy as np
 import pandas as pd
 import os
 from numpy import meshgrid
+from os.path import expanduser
 
-#%% clear screen
+#%% Clear terminal
 os.system('clear')
 
-#%% change dir
-os.chdir('/Users/jorgemauricio/Documents/Research/generateMaps')
+#%% chance workdirectory
+home = expanduser("~")
+home += "/Documents/Research/wheatRust"
+os.chdir(home)
 
 #%% Function
 def checkWR(tp1, tp2, tp3, tp4, tp5, tmn1, tmn2, tmn3, tmn4, tmn5, dp1, dp2, dp3, dp4, dp5, downLimit, upperLimit):
